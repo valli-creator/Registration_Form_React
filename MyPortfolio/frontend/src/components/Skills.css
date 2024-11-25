@@ -1,0 +1,78 @@
+/* Basic styles for skills section */
+.skills {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+.skills p {
+  color: #333;
+}
+.skills h2 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+}
+
+.skill-category {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: ivory;
+  transition: background-color 0.3s ease;
+}
+.skill-category.expanded-category {
+  background-color: lightblue; /* Light blue background when expanded */
+  border-color: #007bff; /* Blue border when expanded */
+}
+
+/* Hover effect for category */
+.skill-category:hover {
+  background-color: #f0f0f0;
+}
+
+/* Styling for skill category title */
+.category-title {
+  font-size: 1.5em;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for category title */
+.category-title:hover {
+  color: #007bff;
+}
+
+/* List of skills */
+.skill-list {
+  padding-left: 20px;
+  max-height: 0;
+  margin-top: 10px;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  list-style-type: circle; /* Default bullet style */
+  color: #333;
+}
+
+/* Expanded skill list when category is clicked */
+.skill-list.expanded {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+/* Individual skill items */
+.skill-item {
+  list-style-type: none;
+  padding: 5px;
+  font-size: 1.1em;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for skill items */
+.skill-item:hover {
+  color: #007bff;
+  cursor: pointer;
+}
